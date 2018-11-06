@@ -14,8 +14,8 @@ public class PROG_EJ_6_bucles {
         
         Metodos obx1 = new Metodos();
         //obx1.bucleWhile();
-        obx1.bucleDoWhile();
-        
+        //obx1.bucleDoWhile();
+        obx1.bucleFor();
     }
     
 }
