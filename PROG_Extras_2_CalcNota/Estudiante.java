@@ -76,7 +76,7 @@ public class Estudiante {
     public float calcNotaFinal(){
         float notaFinal=calcPtosTeorica() + calcPtosPractica() + calcPtosBoletines();
         System.out.println("Media estudiante: " + notaFinal);
-        return notaFinal;
+        return Math.round(notaFinal);
     }
     
     public void pedirDatos(){
