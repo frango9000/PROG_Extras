@@ -22,7 +22,7 @@ public class Ordenador {
 //        this.rato = rato;
 //        this.teclado = teclado;
 //    }
-    Ordenador(Cpu cp, Monitor monit, Rato rat, Teclado tecl) {
+    public Ordenador(Cpu cp, Monitor monit, Rato rat, Teclado tecl) {
         this.cpu = cp;
         this.monitor = monit;
         this.rato = rat;
