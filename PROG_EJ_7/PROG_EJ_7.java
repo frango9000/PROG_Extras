@@ -19,7 +19,7 @@ public class PROG_EJ_7 {
 
         Ordenador ord1 = new Ordenador(cp, monit, rat, tecl);
 
-        ord1.visualizarAtributos();
+        ord1.visualizarAtributosOrdenador();
         System.out.println("Precio: " + ord1.calcularPrecio());
     }
 }

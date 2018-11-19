@@ -37,10 +37,11 @@ public class Ordenador {
         return (cpu.getRam() * 5f + teclado.getNumTeclas() * 0.7f + monitor.getPulgadas() * 12f) * ratoInalambrico;
     }
 
-    public void visualizarAtributos() {
-        System.out.println("Ordenador: \nCPU:\nNucleos: " + cpu.getNucleos() + "\nRam: " + cpu.getRam());
-        System.out.println("Monitor:\nMarca: " + monitor.getMarca() + "\nPulgadas: " + monitor.getPulgadas());
-        System.out.println("Rato:\nTipo: " + rato.getTypeString() + "\nModelo: " + rato.getModelo());
-        System.out.println("Teclado:\nNumero de Teclas: " + teclado.getNumTeclas());
+    public void visualizarAtributosOrdenador() {
+        System.out.println("Ordenador: \n");
+        monitor.visualizarAtributosMonitor();
+        rato.visualizarAtributosRato();
+        teclado.visualizarAtributosTeclado();
+        cpu.visualizarAtributosOrdenador();
     }
 }
