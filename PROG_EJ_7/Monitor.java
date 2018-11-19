@@ -10,6 +10,7 @@ package PROG_EJ_7;
  * @author fsancheztemprano
  */
 public class Monitor {
+
     private String marca;
     private float pulgadas;
 
@@ -33,5 +34,5 @@ public class Monitor {
     public void setPulgadas(float pulgadas) {
         this.pulgadas = pulgadas;
     }
-    
+
 }

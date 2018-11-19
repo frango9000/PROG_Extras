@@ -10,6 +10,7 @@ package PROG_EJ_7;
  * @author fsancheztemprano
  */
 public class Cpu {
+
     private int nucleos;
     private int ram;
 
@@ -33,5 +34,5 @@ public class Cpu {
     public void setRam(int ram) {
         this.ram = ram;
     }
-    
+
 }

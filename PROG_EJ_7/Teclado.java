@@ -10,6 +10,7 @@ package PROG_EJ_7;
  * @author fsancheztemprano
  */
 public class Teclado {
+
     private int numTeclas;
 
     public Teclado(int numTeclas) {
@@ -23,5 +24,5 @@ public class Teclado {
     public void setNumTeclas(int numTeclas) {
         this.numTeclas = numTeclas;
     }
-    
+
 }

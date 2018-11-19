@@ -10,6 +10,7 @@ package PROG_EJ_7;
  * @author fsancheztemprano
  */
 public class Rato {
+
     private boolean inalambrico;
     private String modelo;
 
@@ -33,8 +34,12 @@ public class Rato {
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
-    public String getTypeString(){
-        if(inalambrico)return "inalambrico";
-        else return "alambrico";
+
+    public String getTypeString() {
+        if (inalambrico) {
+            return "inalambrico";
+        } else {
+            return "alambrico";
+        }
     }
 }
