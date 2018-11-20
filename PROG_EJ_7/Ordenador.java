@@ -42,6 +42,6 @@ public class Ordenador {
         monitor.visualizarAtributosMonitor();
         rato.visualizarAtributosRato();
         teclado.visualizarAtributosTeclado();
-        cpu.visualizarAtributosOrdenador();
+        cpu.visualizarAtributosCpu();
     }
 }
