@@ -34,7 +34,7 @@ public class Ordenador {
         if (rato.isInalambrico()) {
             ratoInalambrico += 0.5f;
         }
-        return (cpu.getRam() * 5f + teclado.getNumTeclas() * 0.7f + monitor.getPulgadas() * 12f) * ratoInalambrico;
+        return cpu.getRam() * 5f + teclado.getNumTeclas() * 0.7f + monitor.getPulgadas() * 12f + ratoInalambrico;
     }
 
     public void visualizarAtributosOrdenador() {
