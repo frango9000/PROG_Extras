@@ -31,7 +31,7 @@ public class Secretaria extends Empleado {
 
     @Override
     public String toString() {
-        return "Secretaria{" + "nombre=" + super.getNombre() + ", inicio=" + super.getInicio().getTime() + ", nacimiento=" + super.getNacimiento().getTime() + ", titulacion=" + super.getTitulacion() + "telefonoMovil=" + telefonoMovil + '}';
+        return "Secretaria{" + "nombre=" + super.getNombre() + ", inicio=" + super.getInicio().getTime() + ", nacimiento=" + super.getNacimiento().getTime() + ", titulacion=" + super.getTitulacion() + ", telefonoMovil=" + telefonoMovil + '}';
     }
 
 }
