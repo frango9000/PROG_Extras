@@ -6,15 +6,17 @@
 package PROG_Ej_8;
 
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 /**
  *
  * @author fsancheztemprano
  */
 public class Secretaria extends Empleado {
+
     private String telefonoMovil;
 
-    public Secretaria(String telefonoMovil, String nombre, Date inicio, Date nacimiento, String titulacion) {
+    public Secretaria(String telefonoMovil, String nombre, GregorianCalendar inicio, GregorianCalendar nacimiento, String titulacion) {
         super(nombre, inicio, nacimiento, titulacion);
         this.telefonoMovil = telefonoMovil;
     }
@@ -29,10 +31,7 @@ public class Secretaria extends Empleado {
 
     @Override
     public String toString() {
-        return "Secretaria{" + "nombre=" + super.getNombre() + ", inicio=" + super.getInicio() + ", nacimiento=" + super.getNacimiento() + ", titulacion=" + super.getTitulacion() + "telefonoMovil=" + telefonoMovil +'}';
+        return "Secretaria{" + "nombre=" + super.getNombre() + ", inicio=" + super.getInicio().getTime() + ", nacimiento=" + super.getNacimiento().getTime() + ", titulacion=" + super.getTitulacion() + "telefonoMovil=" + telefonoMovil + '}';
     }
 
- 
-    
-    
 }

@@ -5,22 +5,23 @@
  */
 package PROG_Ej_8;
 
-import java.util.Date;
+import java.util.GregorianCalendar;
 
 /**
  *
  * @author fsancheztemprano
  */
 public class Empleado {
+
     private String nombre;
-    private Date inicio;
-    private Date nacimiento;
+    private GregorianCalendar inicio;
+    private GregorianCalendar nacimiento;
     private String titulacion;
 
     public Empleado() {
     }
 
-    public Empleado(String nombre, Date inicio, Date nacimiento, String titulacion) {
+    public Empleado(String nombre, GregorianCalendar inicio, GregorianCalendar nacimiento, String titulacion) {
         this.nombre = nombre;
         this.inicio = inicio;
         this.nacimiento = nacimiento;
@@ -35,19 +36,19 @@ public class Empleado {
         this.nombre = nombre;
     }
 
-    public Date getInicio() {
+    public GregorianCalendar getInicio() {
         return inicio;
     }
 
-    public void setInicio(Date inicio) {
+    public void setInicio(GregorianCalendar inicio) {
         this.inicio = inicio;
     }
 
-    public Date getNacimiento() {
+    public GregorianCalendar getNacimiento() {
         return nacimiento;
     }
 
-    public void setNacimiento(Date nacimiento) {
+    public void setNacimiento(GregorianCalendar nacimiento) {
         this.nacimiento = nacimiento;
     }
 
@@ -61,10 +62,10 @@ public class Empleado {
 
     @Override
     public String toString() {
-        return "Empleado{" + "nombre=" + nombre + ", inicio=" + inicio + ", nacimiento=" + nacimiento + ", titulacion=" + titulacion + '}';
+        return "Empleado{" + "nombre=" + nombre + ", inicio=" + inicio.getTime() + ", nacimiento=" + nacimiento.getTime() + ", titulacion=" + titulacion + '}';
     }
-    
-    public void calcSueldo(){
+
+    public void calcSueldo() {
         System.out.println("calc");
     }
 }
