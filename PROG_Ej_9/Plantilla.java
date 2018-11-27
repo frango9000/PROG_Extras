@@ -62,7 +62,7 @@ public class Plantilla {
 
     }
 
-    public void viajar() {
+    public final void viajar() {
 
     }
 }

@@ -38,5 +38,5 @@ public class Masajista extends Plantilla{
     public void darMasaje(){
         
     }
-    
+
 }
