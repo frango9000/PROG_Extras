@@ -34,4 +34,10 @@ public class Secretaria extends Empleado {
         return "Secretaria{" + "nombre=" + super.getNombre() + ", inicio=" + super.getInicio().getTime() + ", nacimiento=" + super.getNacimiento().getTime() + ", titulacion=" + super.getTitulacion() + ", telefonoMovil=" + telefonoMovil + '}';
     }
 
+    @Override
+    public float calcSueldo() {
+        
+        return super.calcSueldo()-10f;
+    }
+
 }

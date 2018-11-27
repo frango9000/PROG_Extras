@@ -23,9 +23,15 @@ public class main {
         System.out.println(sec1.toString());
 
         Empleado emp1 = new Empleado("ana", date1, date2, "FP");
-
-        emp1.calcSueldo();
+        System.out.println(emp1.calcSueldo());
         System.out.println(emp1.toString());
+
+        Empleado sec2 = new Secretaria("232", "ped", new GregorianCalendar(2015, 3, 15), new GregorianCalendar(2015, 3, 15), "FP");
+
+        System.out.println(sec2.toString());
+        System.out.println(sec2.getNombre());
+
+        System.out.println(sec2.calcSueldo());
     }
 
 }
