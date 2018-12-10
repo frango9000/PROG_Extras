@@ -6,6 +6,6 @@ public class PROG_EJ_Excepciones {
 
         Operaciones op = new Operaciones();
 
-        op.all(8, 0);
+        op.all(8, 1);
     }
 }

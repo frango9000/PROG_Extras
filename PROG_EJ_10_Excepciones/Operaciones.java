@@ -34,6 +34,8 @@ public class Operaciones {
             divis(i, j);
         } catch (ArithmeticException e) {
             System.out.println("Error al dividir entre 0");
+        } finally {
+            System.out.println("123");
         }
     }
 }
