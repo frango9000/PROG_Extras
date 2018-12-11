@@ -10,8 +10,16 @@ public class PROG_EJ_Excepciones {
         Scanner scan = new Scanner(System.in);
 
         try{
-            op.divisMyEx(1,0);
+            System.out.println("Introduce numerador: ");
+            int num = scan.nextInt();
+            System.out.println("Introduce denominador: ");
+            int denom = scan.nextInt();
+            op.divisMyEx(num,denom);
         }catch(DividirExeption e){
+            System.out.println("Msg: " + e.getMessage());
+        }catch(IntervaloExeption e){
+            System.out.println("Msg: " + e.getMessage());
+        }catch(NoNumExeption e){
             System.out.println("Msg: " + e.getMessage());
         }
 //

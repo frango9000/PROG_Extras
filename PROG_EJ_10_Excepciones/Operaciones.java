@@ -1,6 +1,10 @@
 package PROG_EJ_10_Excepciones;
 
+import com.sun.jdi.IntegerType;
+
 public class Operaciones {
+
+    private int .;
 
     public void suma(int i, int j) {
         System.out.println("Suma numero: " + i + " + " + j + " = " + (i + j));
@@ -33,10 +37,15 @@ public class Operaciones {
             System.out.println("Division numero: " + i + " / " + j + " = " + (i / j));
         }
     }
-    public void divisMyEx(int i, int j)throws DividirExeption {
-        if (j==0){
-            throw new DividirExeption();
-        }else{
+    public void divisMyEx(int i, int j)throws DividirExeption,IntervaloExeption,NoNumExeption {
+        if (j==0) {
+            throw new DividirExeption("DividirEx");
+        }else if (i>=80 ||i<=100) {
+            throw new IntervaloExeption("IntervaloEx");
+        }else if (false) {
+            throw new NoNumExeption("NoNumEx");
+        }
+        else{
             System.out.println("Division numero: " + i + " / " + j + " = " + (i / j));
         }
     }
