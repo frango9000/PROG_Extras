@@ -10,9 +10,9 @@ public class PROG_EJ_Excepciones {
         Scanner scan = new Scanner(System.in);
 
         try{
-            op.divisEx(1,0);
-        }catch(ArithmeticException e){
-            System.out.println("asdhakjdadkljasdl" + e.getMessage());
+            op.divisMyEx(1,0);
+        }catch(DividirExeption e){
+            System.out.println("Msg: " + e.getMessage());
         }
 //
 //

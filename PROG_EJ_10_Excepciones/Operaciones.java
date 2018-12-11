@@ -33,6 +33,13 @@ public class Operaciones {
             System.out.println("Division numero: " + i + " / " + j + " = " + (i / j));
         }
     }
+    public void divisMyEx(int i, int j)throws DividirExeption {
+        if (j==0){
+            throw new DividirExeption();
+        }else{
+            System.out.println("Division numero: " + i + " / " + j + " = " + (i / j));
+        }
+    }
 
     public void all(int i, int j) {
         suma(i, j);
