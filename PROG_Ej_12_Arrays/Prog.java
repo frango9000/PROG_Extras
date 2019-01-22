@@ -16,6 +16,7 @@ public class Prog {
         MetodosB mb = new MetodosB();
         mb.numeros=new int[MetodosB.darValor("indice")];
         mb.crearArray();
+        System.out.println(mb.numerosToString());
     }
     
     public static void e1(){

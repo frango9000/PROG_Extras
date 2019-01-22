@@ -5,6 +5,7 @@
  */
 package PROG_Ej_12_Arrays;
 
+import java.util.Arrays;
 import javax.swing.JOptionPane;
 
 /**
@@ -24,6 +25,9 @@ public class MetodosB {
        for(int i =0;i<numeros.length;i++){
            numeros[i]=darValor("Indice " + i);
        }
+   }
+   public String numerosToString(){
+       return Arrays.toString(numeros);
    }
     
     public void amosar(){
