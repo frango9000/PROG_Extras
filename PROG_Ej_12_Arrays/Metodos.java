@@ -53,7 +53,16 @@ public class Metodos {
     }
     
     public int[] arrayDeRepetidos(int num){
-        int[] j = new int[contarRepetidos(num)];
+        int size=contarRepetidos(num);
+        int[] j = new int[size];
+        int h=0;
+         for(int i =0;i<notas.length;i++){
+            if (notas[i]==num){
+                j[h]=i;
+                h++                ;
+            }
+        }
+         return j;
     }
     
 }
