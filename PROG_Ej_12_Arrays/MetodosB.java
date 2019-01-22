@@ -11,42 +11,45 @@ import javax.swing.JOptionPane;
  *
  * @author fsancheztemprano
  */
-public class Metodos {
-    int[] notas ={10,20,30,40,20,60,70,20};
+public class MetodosB {
+    int[] numeros;
     
-   public int darValor(){
-    return Integer.parseInt(JOptionPane.showInputDialog("dar Valor"));
+   public static int darValor(){
+    return Integer.parseInt(JOptionPane.showInputDialog("Dar Valor "));
+   }
+   public static int darValor(String str){
+    return Integer.parseInt(JOptionPane.showInputDialog("Dar Valor " + str));
    }
    public void crearArray(){
-       for(int i =0;i<notas.length;i++){
-           notas[i]=darValor();
+       for(int i =0;i<numeros.length;i++){
+           numeros[i]=darValor("Indice " + i);
        }
    }
     
     public void amosar(){
-        for(int i=0; i>notas.length;i++){
-            System.out.println(notas[i]);
+        for(int i=0; i>numeros.length;i++){
+            System.out.println(numeros[i]);
         }
     }
     public void amosarForEach(){
-        for(int ele : notas){
+        for(int ele : numeros){
             System.out.println(ele);
         }
     }
     public int buscarIndice(int num){
-        for (int i =0;i<notas.length;i++){
-            if (notas[i]==num) return i;
+        for (int i =0;i<numeros.length;i++){
+            if (numeros[i]==num) return i;
         }
         return -1;
     }
     public void editar(int index, int value){
-        notas[index]=value;
+        numeros[index]=value;
         
     }
     public int contarRepetidos(int num){
         int j=0;
-        for(int i =0;i<notas.length;i++)
-            if (notas[i]==num){
+        for(int i =0;i<numeros.length;i++)
+            if (numeros[i]==num){
                 j++;                
         }
         return j;
@@ -56,8 +59,8 @@ public class Metodos {
         int size=contarRepetidos(num);
         int[] j = new int[size];
         int h=0;
-         for(int i =0;i<notas.length;i++){
-            if (notas[i]==num){
+         for(int i =0;i<numeros.length;i++){
+            if (numeros[i]==num){
                 j[h]=i;
                 h++                ;
             }
@@ -81,7 +84,7 @@ public class Metodos {
     }
     
     public void notasOrdenadas(){
-        notas=arrayOrdenado(notas);        
+        numeros=arrayOrdenado(numeros);        
     }
     
     public static int[] eliminarIndice(int[] array, int indice){
@@ -96,6 +99,6 @@ public class Metodos {
     }
     
     public void eliminarNota(int indice){
-        notas=eliminarIndice(notas, indice);
+        numeros=eliminarIndice(numeros, indice);
     }
 }
