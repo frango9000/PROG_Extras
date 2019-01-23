@@ -13,10 +13,10 @@ import java.util.Arrays;
  */
 public class Prog {
     public static void main(String[] args){
-
+            e1();
     }
     
-    void e1(){
+    static void e1(){
         Metodos obj = new Metodos();
         System.out.println(obj.contarRepetidos(20));
         System.out.println(Arrays.toString(obj.arrayDeRepetidos(20)));
@@ -28,7 +28,7 @@ public class Prog {
             
         }
     }
-    void e2(){
+    static void e2(){
         Metodos obj = new Metodos();
         //int[] array = Metodos.arrayOrdenado(obj.notas);
         System.out.println(Arrays.toString(obj.notas));
@@ -36,19 +36,19 @@ public class Prog {
         System.out.println(Arrays.toString(obj.notas));
     }
     
-    void e3(){
+    static void e3(){
         Metodos obj = new Metodos();
         
         System.out.println(Arrays.toString(obj.notas));
         System.out.println(Arrays.toString(Metodos.eliminarIndice(obj.notas, 5)));
     }
-    void e4(){
+    static void e4(){
         MetodosB mb = new MetodosB();
         mb.numeros=new int[MetodosB.darValor("indice")];
         mb.crearArray();
         System.out.println(mb.numerosToString());
     }
-    void e5(){
+    static void e5(){
         MetodosB mb = new MetodosB();
         System.out.println(mb.numerosToString());
         mb.agregarIndice(5, 10);
