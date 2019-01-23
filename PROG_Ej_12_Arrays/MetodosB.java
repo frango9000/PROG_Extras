@@ -34,16 +34,16 @@ public class MetodosB {
         return Arrays.toString(numeros);
     }
 
-    public static void amosar(int[] array) {
+    public static void mostrar(int[] array) {
         for (int i = 0; i > array.length; i++) {
             System.out.println(array[i]);
         }
     }
-    public void amosar(){
-        amosar(numeros);
+    public void mostrar(){
+        mostrar(numeros);
     }
 
-    public void amosarForEach() {
+    public void mostrarForEach() {
         for (int ele : numeros) {
             System.out.println(ele);
         }
