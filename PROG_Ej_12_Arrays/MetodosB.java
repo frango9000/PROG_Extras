@@ -34,10 +34,13 @@ public class MetodosB {
         return Arrays.toString(numeros);
     }
 
-    public void amosar() {
-        for (int i = 0; i > numeros.length; i++) {
-            System.out.println(numeros[i]);
+    public static void amosar(int[] array) {
+        for (int i = 0; i > array.length; i++) {
+            System.out.println(array[i]);
         }
+    }
+    public void amosar(){
+        amosar(numeros);
     }
 
     public void amosarForEach() {
