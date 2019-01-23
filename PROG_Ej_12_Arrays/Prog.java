@@ -16,7 +16,7 @@ public class Prog {
 
     }
     
-    public static void e1(){
+    void e1(){
         Metodos obj = new Metodos();
         System.out.println(obj.contarRepetidos(20));
         System.out.println(Arrays.toString(obj.arrayDeRepetidos(20)));
@@ -28,7 +28,7 @@ public class Prog {
             
         }
     }
-    public static void e2(){
+    void e2(){
         Metodos obj = new Metodos();
         //int[] array = Metodos.arrayOrdenado(obj.notas);
         System.out.println(Arrays.toString(obj.notas));
@@ -36,13 +36,13 @@ public class Prog {
         System.out.println(Arrays.toString(obj.notas));
     }
     
-    public static void e3(){
+    void e3(){
         Metodos obj = new Metodos();
         
         System.out.println(Arrays.toString(obj.notas));
         System.out.println(Arrays.toString(Metodos.eliminarIndice(obj.notas, 5)));
     }
-    public static void e4(){
+    void e4(){
         MetodosB mb = new MetodosB();
         mb.numeros=new int[MetodosB.darValor("indice")];
         mb.crearArray();
