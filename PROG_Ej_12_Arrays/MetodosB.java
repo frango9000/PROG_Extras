@@ -126,13 +126,9 @@ public class MetodosB {
     public static int[] agregarIndice(int[] array, int indice, int elemento) {
         int[] nuevoArray = new int[array.length + 1];
         for (int i = 0; i < nuevoArray.length; i++) {
-            if (i < indice) {
-                nuevoArray[i] = array[i];
-            } else if (i == indice) {
-                nuevoArray[i] = elemento;
-            } else if (i > indice) {
-                nuevoArray[i] = array[i - 1];
-            }
+            if      (i <  indice)nuevoArray[i] = array[i];
+            else if (i == indice)nuevoArray[i] = elemento;
+            else if (i >  indice)nuevoArray[i] = array[i - 1];            
         }
         return nuevoArray;
     }
