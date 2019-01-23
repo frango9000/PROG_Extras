@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  * @author fsancheztemprano
  */
 public class MetodosB {
-    int[] numeros;
+    int[] numeros={10,20,30,40,50,60,70,80,90};
     
    public static int darValor(){
     return Integer.parseInt(JOptionPane.showInputDialog("Dar Valor "));
@@ -40,6 +40,8 @@ public class MetodosB {
             System.out.println(ele);
         }
     }
+    
+    
     public int buscarIndice(int num){
         for (int i =0;i<numeros.length;i++){
             if (numeros[i]==num) return i;
@@ -50,26 +52,32 @@ public class MetodosB {
         numeros[index]=value;
         
     }
-    public int contarRepetidos(int num){
+    public static int contarRepetidos(int[] array, int num){
         int j=0;
-        for(int i =0;i<numeros.length;i++)
-            if (numeros[i]==num){
+        for(int i =0;i<array.length;i++)
+            if (array[i]==num){
                 j++;                
         }
         return j;
     }
+    public int contarRepetidos(int num){
+        return contarRepetidos(numeros, num);
+    }
     
-    public int[] arrayDeRepetidos(int num){
-        int size=contarRepetidos(num);
+    public static int[] arrayDeRepetidos(int[] array, int num){
+        int size=contarRepetidos(array, num);
         int[] j = new int[size];
         int h=0;
-         for(int i =0;i<numeros.length;i++){
-            if (numeros[i]==num){
+         for(int i =0;i<array.length;i++){
+            if (array[i]==num){
                 j[h]=i;
                 h++                ;
             }
         }
          return j;
+    }
+    public int[] arrayDeRepetidos(int num){
+        return arrayDeRepetidos(numeros, num);
     }
     
     public static int[] arrayOrdenado(int[] array){
@@ -87,7 +95,7 @@ public class MetodosB {
         return array;
     }
     
-    public void notasOrdenadas(){
+    public void arrayOrdenado(){
         numeros=arrayOrdenado(numeros);        
     }
     
@@ -104,5 +112,18 @@ public class MetodosB {
     
     public void eliminarNota(int indice){
         numeros=eliminarIndice(numeros, indice);
+    }
+    
+    public static int[] agregarIndice(int[] array, int indice, int elemento){
+        int[] nuevoArray = new int[array.length+1];
+        for (int i=0 ; i<nuevoArray.length;i++){
+            if(i<indice)nuevoArray[i]=array[i];
+            else if (i==indice)nuevoArray[i]=elemento;
+            else if (i >indice)nuevoArray[i]=array[i-1];
+        }
+        return nuevoArray;
+    }
+    public int[] agregarIndice(int indice, int elemento){
+        return agregarIndice(numeros, indice, elemento);
     }
 }

@@ -13,15 +13,12 @@ import java.util.Arrays;
  */
 public class Prog {
     public static void main(String[] args){
-        MetodosB mb = new MetodosB();
-        mb.numeros=new int[MetodosB.darValor("indice")];
-        mb.crearArray();
-        System.out.println(mb.numerosToString());
+
     }
     
     public static void e1(){
         Metodos obj = new Metodos();
-                System.out.println(obj.contarRepetidos(20));
+        System.out.println(obj.contarRepetidos(20));
         System.out.println(Arrays.toString(obj.arrayDeRepetidos(20)));
         
         int[] arr=obj.arrayDeRepetidos(20);
@@ -32,7 +29,7 @@ public class Prog {
         }
     }
     public static void e2(){
-                Metodos obj = new Metodos();
+        Metodos obj = new Metodos();
         //int[] array = Metodos.arrayOrdenado(obj.notas);
         System.out.println(Arrays.toString(obj.notas));
         Arrays.sort(obj.notas);
@@ -45,5 +42,16 @@ public class Prog {
         System.out.println(Arrays.toString(obj.notas));
         System.out.println(Arrays.toString(Metodos.eliminarIndice(obj.notas, 5)));
     }
-    
+    public static void e4(){
+        MetodosB mb = new MetodosB();
+        mb.numeros=new int[MetodosB.darValor("indice")];
+        mb.crearArray();
+        System.out.println(mb.numerosToString());
+    }
+    void e5(){
+        MetodosB mb = new MetodosB();
+        System.out.println(mb.numerosToString());
+        mb.agregarIndice(5, 10);
+        System.out.println(mb.numerosToString());
+    }
 }
