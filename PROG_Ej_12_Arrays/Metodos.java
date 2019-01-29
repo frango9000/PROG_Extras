@@ -39,63 +39,28 @@ public class Metodos {
         }
         return -1;
     }
+    
     public void editar(int index, int value){
-        notas[index]=value;
-        
+        notas[index]=value;        
     }
+    
     public int contarRepetidos(int num){
-        int j=0;
-        for(int i =0;i<notas.length;i++)
-            if (notas[i]==num){
-                j++;                
-        }
-        return j;
-    }
-    
+        return ArraysLib.contarRepetidos(notas,num);
+    }    
+
     public int[] arrayDeRepetidos(int num){
-        int size=contarRepetidos(num);
-        int[] j = new int[size];
-        int h=0;
-         for(int i =0;i<notas.length;i++){
-            if (notas[i]==num){
-                j[h]=i;
-                h++                ;
-            }
-        }
-         return j;
+        return ArraysLib.arrayDeRepetidos(notas, num);
     }
-    
-    public static int[] arrayOrdenado(int[] array){
-        for(int i = 0;i<array.length;i++){
-            for(int j =i+1;j<array.length;j++){
-                if(array[i]>array[j]){
-                    int aux=array[i];
-                    array[i]=array[j];
-                    array[j]=aux;                 
-                    
-                }
-                
-            }
-        }
-        return array;
-    }
-    
+
     public void notasOrdenadas(){
-        notas=arrayOrdenado(notas);        
+        notas=ArraysLib.arrayOrdenado(notas);        
     }
     
-    public static int[] eliminarIndice(int[] array, int indice){
-        int[] newArray = new int[array.length-1];
-        for (int i =0,j=0;i<array.length;i++){
-            if(i!=indice){
-                newArray[j]=array[i];
-                j++;
-            }
-        }
-        return newArray;
+    public int[] eliminarIndice(int indice){
+        return ArraysLib.eliminarIndice(notas, indice);
     }
     
     public void eliminarNota(int indice){
-        notas=eliminarIndice(notas, indice);
+        notas=eliminarIndice(indice);
     }
 }

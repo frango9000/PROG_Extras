@@ -40,7 +40,7 @@ public class Prog {
         Metodos obj = new Metodos();
         
         System.out.println(Arrays.toString(obj.notas));
-        System.out.println(Arrays.toString(Metodos.eliminarIndice(obj.notas, 5)));
+        System.out.println(Arrays.toString(obj.eliminarIndice(5)));
     }
     static void e4(){
         MetodosB mb = new MetodosB();
