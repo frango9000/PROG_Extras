@@ -26,7 +26,11 @@ public class Metodos {
             System.out.println(it.next());
         }
     }
-    public static int eliminar(ArrayList<Integer> lista, int posicion){
+    public static int eliminarIndex(ArrayList<Integer> lista, int posicion){
         return lista.remove(posicion);   
+    }
+    public static boolean eliminarElemento(ArrayList<Integer> lista, int elemento){
+        Integer num = elemento;
+        return lista.remove(num);        
     }
 }
