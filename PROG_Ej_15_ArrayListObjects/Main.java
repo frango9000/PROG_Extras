@@ -5,9 +5,10 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args){
-        ArrayList alumnos;
-        alumnos = new ArrayList<Alumno>();
-        
+        ArrayList<Alumno> alumnos= new ArrayList<>();
+        Alumno a1 = new Alumno("N1", "5k", 10);
+        alumnos.add(a1);
+        System.out.println(alumnos.toString());
         
     }
 

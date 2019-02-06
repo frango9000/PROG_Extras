@@ -39,6 +39,11 @@ public class Alumno implements Comparable {
     }
 
     @Override
+    public String toString() {
+        return "Alumno{" + "nombre=" + nombre + ", dni=" + dni + ", nota=" + nota + '}';
+    }
+
+    @Override
     public int compareTo(Object o) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
