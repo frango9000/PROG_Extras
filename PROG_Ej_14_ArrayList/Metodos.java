@@ -33,4 +33,7 @@ public class Metodos {
         Integer num = elemento;
         return lista.remove(num);        
     }
+        public void actualizarValor(ArrayList<Integer> listNumeros, Integer posicion,Integer elementoNuevo){
+        listNumeros.set(posicion-1,elementoNuevo);
+    }
 }
