@@ -26,18 +26,16 @@ public class Controlador {
             productos.cambiarPrecio(ref, nuevoPrecio);
     }
     public void print(){
-        Object[] codigos = bd.arrayOfKeys();
+        String[] codigos = bd.arrayOfKeysS();
         float total = 0;
             System.out.printf("%3s, %4s, %4s, %4s, %9s%n","Ref", "Codigo", "Stock", "Precio", "Total");
-        for (int i = 0; i < codigos.length; i++) {
-            String thisCodigo =(String) codigos[i];
+        for (String thisCodigo : codigos) {
             int thisRef = bd.getRef(thisCodigo);
             int thisUnidades = almacen.getUnidades(thisRef);
             float thisPrecio = productos.getPrecio(thisRef);
             float semiPrecio = thisUnidades * thisPrecio;
             total += semiPrecio;
             System.out.printf("%3d, %6s, %5d, %6.2f, %9.2f%n",thisRef, thisCodigo, thisUnidades, thisPrecio, semiPrecio );
-            
         }
         System.out.printf("Total almacen = %5.2f%n%n",total);
         
