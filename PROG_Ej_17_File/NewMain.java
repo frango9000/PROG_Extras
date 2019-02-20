@@ -12,6 +12,7 @@ public class NewMain {
         obx.leerPalabras(file);
         
         
+        
 
 
     }

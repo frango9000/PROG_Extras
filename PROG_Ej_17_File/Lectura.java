@@ -13,6 +13,9 @@ public class Lectura {
         }catch(FileNotFoundException ex){
             System.out.println("No se encuentra el archivo");
         }
+        while(scan.hasNext()){
+        System.out.println(scan.next());
+        }
     
     }
 
