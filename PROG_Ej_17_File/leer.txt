@@ -1,1 +1,3 @@
-hola msg uno
+Nombre1 7
+Nombre2 6
+Nombre3 4
