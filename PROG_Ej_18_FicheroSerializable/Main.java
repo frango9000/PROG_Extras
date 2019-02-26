@@ -10,6 +10,9 @@ public class Main {
         EscribirSerializable es = new EscribirSerializable();
         es.escribirObjeto("alumno");
         
+        LecturaSerializable ls = new LecturaSerializable();
+        ls.leerObjeto("alumno");
+        
 
 
     }
