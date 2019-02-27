@@ -37,4 +37,29 @@ public class EscribirSerializable {
         }
     }
 
+    public void agregarObjetos(String filename) {
+        try {
+            f = new FileOutputStream(filename + ".dat", true);
+            file = new HeadlessObjectOutputStream(f);
+
+            for (int i = 6; i < 10; i++) {
+                Alumno al = new Alumno("n" + i, i + 1);
+                file.writeObject(al);
+            }
+
+        } catch (FileNotFoundException ex) {
+            System.out.println("FileNotFoundException");
+        } catch (IOException ex) {
+            System.out.println("IOException");
+
+        } finally {
+            try {
+                file.close();
+                f.close();
+            } catch (IOException ex) {
+                System.out.println("IOException");
+            }
+        }
+    }
+
 }

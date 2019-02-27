@@ -13,6 +13,10 @@ public class Main {
         LecturaSerializable ls = new LecturaSerializable();
         ls.leerObjeto("alumno");
         
+        es.agregarObjetos("alumno");
+        
+        ls.leerObjeto("alumno");
+        
 
 
     }
