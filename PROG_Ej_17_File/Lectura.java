@@ -37,6 +37,20 @@ public class Lectura {
         return lista;
     }
     
+        public void leerDelimitador(File fich) {
+        try {
+            scan = new Scanner(fich).useDelimiter("\\s*,\\s*");
+            // \\s* para que coja los espacios que tenga sea uno o varios
+            while (scan.hasNext()) {
+                System.out.println(scan.next());
+            }
+        } catch (FileNotFoundException ex) {
+            System.out.println(ex.getMessage());
+        } finally {
+            scan.close();
+        }
+    }
+    
     public ArrayList<Alumno> leerAlumnos(File file){
         ArrayList<Alumno> lista = new ArrayList<>();
         try{
