@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
+import java.util.ArrayList;
 
 /**
  * @author fsancheztemprano
@@ -13,13 +14,22 @@ public class LecturaSerializable {
     FileInputStream file;
     Alumno al;
     
-    public void leerObjeto(String filename){
+    public ArrayList<Alumno> leerObjeto(String filename){
+        ArrayList<Alumno> alumnos = new ArrayList<>();
+        Alumno al = null;
         try{
             file = new FileInputStream(filename + ".dat");
             read = new ObjectInputStream(file);
             
-            al = (Alumno) read.readObject();
-            System.out.println(al);
+            while (true){
+                if (file.available() != 0){
+                    al = (Alumno) read.readObject(); 
+                    alumnos.add(al);
+                    System.out.println(al);
+                }else break;
+            }
+            System.out.println(alumnos);
+            
             
             
             
@@ -35,6 +45,8 @@ public class LecturaSerializable {
                 System.out.println("IOException");                
             }
         }
+        return alumnos;
     }
+    
 
 }
