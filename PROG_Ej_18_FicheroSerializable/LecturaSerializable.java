@@ -10,45 +10,38 @@ import java.util.ArrayList;
  * @author fsancheztemprano
  */
 public class LecturaSerializable {
+
     ObjectInputStream read;
     FileInputStream file;
     Alumno al;
-    
-    public ArrayList<Alumno> leerObjeto(String filename){
+
+    public ArrayList<Alumno> leerObjeto(String filename) {
         ArrayList<Alumno> alumnos = new ArrayList<>();
-        Alumno al = null;
         boolean x = true;
-        try{
+        try {
             file = new FileInputStream(filename + ".dat");
             read = new ObjectInputStream(file);
-            
-            while (x){
-                if (file.available() != 0){
-                    al = (Alumno) read.readObject(); 
-                    alumnos.add(al);
-                    System.out.println(al);
-                }else 
-                    x = false;
+
+            while (file.available() != 0) {
+                Alumno alumno = (Alumno) read.readObject();
+                alumnos.add(alumno);
+                System.out.println(alumno);
             }
             System.out.println(alumnos);
-            
-            
-            
-            
-        }catch (ClassNotFoundException | FileNotFoundException ex) {
-            System.out.println("FileNotFoundException"); 
-        }catch (IOException ex) {
-            System.out.println("IOException");         
-        }finally{
-                try{
+
+        } catch (ClassNotFoundException | FileNotFoundException ex) {
+            System.out.println("FileNotFoundException");
+        } catch (IOException ex) {
+            System.out.println("IOException");
+        } finally {
+            try {
                 file.close();
                 read.close();
-            }catch (IOException ex) {
-                System.out.println("IOException");                
+            } catch (IOException ex) {
+                System.out.println("IOException");
             }
         }
         return alumnos;
     }
-    
 
 }
