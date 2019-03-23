@@ -1,15 +1,15 @@
 package PROG_Ej_14_ArrayList;
 //@author fsancheztemprano
 
-import com.f.lib.IO;
-import com.f.lib.Tipo;
+import lib.Misc.IO;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Metodos {
     
     public static void agregar(ArrayList<Integer> lista){
-        lista.add(Integer.parseInt(IO.crearIO(Tipo.CONSOLA).input("introducir numero")));
+        lista.add(IO.scanInt("introducir numero"));
     }
     public static void mostrarFor(ArrayList<Integer> lista){
         for (int i = 0; i < lista.size(); i++) {

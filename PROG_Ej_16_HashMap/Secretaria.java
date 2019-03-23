@@ -1,10 +1,11 @@
 package PROG_Ej_16_HashMap;
 //@author fsancheztemprano
 
+import lib.Misc.IO;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
-import static lib.LibreriaPROG.pedirDato;
 
 public class Secretaria {
     public static int refe = 6000;
@@ -12,7 +13,7 @@ public class Secretaria {
     public void crear(HashMap<String,Alumno> lAlumnos, String Dni, Alumno alumno){
         if(lAlumnos.containsKey(Dni))
             System.out.println("Ya existe ese dni en la lista");
-        else lAlumnos.put(Dni, new Alumno(pedirDato("Nombre"), Integer.parseInt(pedirDato("nota") ) ) );
+        else lAlumnos.put(Dni, new Alumno(IO.scanNextLine("Nombre"), IO.scanInt("nota") ) );
     }
     
     public void mostrarLista(HashMap<String,Alumno> lAlumnos){
