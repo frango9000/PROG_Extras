@@ -39,6 +39,7 @@ public class Componentes {
         boton1.setBounds(200, 300, 20, 10);
         boton2.setBounds(400, 300, 20, 10);
         lineaTxt.setBounds(100, 100, 30, 20);
+        box.setBounds(400, 400, 40, 400);
         //box.set
         
         //AÑADIR COMPONENTES
@@ -47,6 +48,7 @@ public class Componentes {
         panel.add(lineaTxt);
         panel.add(boton1);
         panel.add(boton2);
+        panel.add(box);
         // al marco
         marco.add(panel);
         
@@ -58,10 +60,5 @@ public class Componentes {
         
         //DESACTIVAMOS Layout PARA PERSONALIZAR
         panel.setLayout(null);
-        
-        
-
-       
-        
     }
 }
