@@ -30,16 +30,17 @@ public class Componentes {
         box = new JComboBox<>();
         
         
+        
         //CARACTERISTICAS
         marco.setSize(800, 400);
         panel.setSize(800, 400);
-        panel.setBackground(Color.red);
+        panel.setBackground(Color.RED);
         etiqueta.setText("NombreEtiqueta");
         etiqueta.setBounds(50, 100, 50, 10);
         boton1.setBounds(200, 300, 20, 10);
         boton2.setBounds(400, 300, 20, 10);
-        lineaTxt.setBounds(100, 100, 30, 20);
-        box.setBounds(400, 400, 40, 400);
+        lineaTxt.setBounds(0, 0, 0, 0);
+        box.setBounds(0, 0, 0, 0);
         //box.set
         
         //AÑADIR COMPONENTES
