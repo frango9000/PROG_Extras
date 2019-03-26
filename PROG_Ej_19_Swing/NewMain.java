@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 public class NewMain {
 
     public static void main(String[] args) {
-        e3();
+        e5();
         
 
     }
@@ -46,5 +46,10 @@ public class NewMain {
     static void e4(){
         Componentes c = new Componentes();
         c.crearVentana();
+    }
+    
+    static void e5(){
+        Test t = new Test();
+        t.ventana();
     }
 }
