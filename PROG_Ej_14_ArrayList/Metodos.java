@@ -1,7 +1,7 @@
 package PROG_Ej_14_ArrayList;
 //@author fsancheztemprano
 
-import lib.Misc.IO;
+import lib.IO;
 
 import java.util.ArrayList;
 import java.util.Iterator;
