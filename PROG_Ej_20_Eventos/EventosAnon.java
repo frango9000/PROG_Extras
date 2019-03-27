@@ -15,8 +15,8 @@ public class EventosAnon extends JFrame {
 
     JPanel panel;
     JButton boton;
-    JButton b2;
-    JButton b3;
+    JButton boton2;
+    JButton boton3;
 
     public EventosAnon() {
         super("*** EVENTOS ***");
@@ -25,12 +25,12 @@ public class EventosAnon extends JFrame {
     public void crearVentana() {
         panel = new JPanel();
         boton = new JButton("Rojo");
-        b2 = new JButton("Azul");
-        b3 = new JButton("Verde");
+        boton2 = new JButton("Azul");
+        boton3 = new JButton("Verde");
         setSize(400, 200);
         panel.add(boton);
-        panel.add(b2);
-        panel.add(b3);
+        panel.add(boton2);
+        panel.add(boton3);
         add(panel);
 
         setVisible(true);
@@ -44,7 +44,7 @@ public class EventosAnon extends JFrame {
 
             }
         });
-        b2.addActionListener(new ActionListener(){
+        boton2.addActionListener(new ActionListener(){
             
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -52,7 +52,7 @@ public class EventosAnon extends JFrame {
 
             }
         });
-        b3.addActionListener(new ActionListener(){
+        boton3.addActionListener(new ActionListener(){
             
             @Override
             public void actionPerformed(ActionEvent e) {

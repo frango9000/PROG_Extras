@@ -6,7 +6,7 @@ package PROG_Ej_20_Eventos;
 public class NewMain {
 
     public static void main(String[] args) {
-        e3();
+        e1();
 
     }
 
