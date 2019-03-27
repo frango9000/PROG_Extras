@@ -15,6 +15,8 @@ public class EventosAnon extends JFrame {
 
     JPanel panel;
     JButton boton;
+    JButton b2;
+    JButton b3;
 
     public EventosAnon() {
         super("*** EVENTOS ***");
@@ -22,9 +24,13 @@ public class EventosAnon extends JFrame {
 
     public void crearVentana() {
         panel = new JPanel();
-        boton = new JButton("vermello");
+        boton = new JButton("Rojo");
+        b2 = new JButton("Azul");
+        b3 = new JButton("Verde");
         setSize(400, 200);
         panel.add(boton);
+        panel.add(b2);
+        panel.add(b3);
         add(panel);
 
         setVisible(true);
@@ -32,19 +38,29 @@ public class EventosAnon extends JFrame {
         //Selecionando eventos 
         boton.addActionListener(new ActionListener() {
 
-            boolean red = false;
-
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (!red) {
-                    panel.setBackground(Color.RED);
-                    red = true;
-                } else {
-                    panel.setBackground(Color.WHITE);
-                    red = false;
-                }
+                panel.setBackground(Color.RED);
+
             }
         });
+        b2.addActionListener(new ActionListener(){
+            
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panel.setBackground(Color.BLUE);
+
+            }
+        });
+        b3.addActionListener(new ActionListener(){
+            
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panel.setBackground(Color.GREEN);
+
+            }
+        });
+        
     }
 
 }
