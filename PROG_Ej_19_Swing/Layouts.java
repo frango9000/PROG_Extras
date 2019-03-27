@@ -12,7 +12,8 @@ import javax.swing.JPanel;
  * @author fsancheztemprano
  */
 public class Layouts extends JFrame {
-        JFrame marco;
+
+    JFrame marco;
     JPanel panel;
     JButton boton1, boton2, boton3, boton4, boton5;
 
@@ -55,9 +56,9 @@ public class Layouts extends JFrame {
         marco.setSize(600, 300);
 
     }
-    
-    public void boxLayout(){
-        
+
+    public void boxLayout() {
+
         iniComp();
         BoxLayout bl = new BoxLayout(panel, BoxLayout.Y_AXIS);
         panel.setLayout(bl);
@@ -71,8 +72,8 @@ public class Layouts extends JFrame {
         marco.setVisible(true);
         marco.setDefaultCloseOperation(3);
     }
-    
-    public void borderLayout(){
+
+    public void borderLayout() {
         /*
         iniComp();
         BorderLayout bol = new BorderLayout();
@@ -86,7 +87,7 @@ public class Layouts extends JFrame {
 
         marco.setVisible(true);
         marco.setDefaultCloseOperation(3);
-        */
+         */
     }
 
     public void gridLayout() {
@@ -103,7 +104,7 @@ public class Layouts extends JFrame {
 
         marco.setVisible(true);
         marco.setDefaultCloseOperation(3);
-        */
+         */
 
     }
 

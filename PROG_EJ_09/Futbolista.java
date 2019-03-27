@@ -9,7 +9,8 @@ package PROG_EJ_09;
  *
  * @author fsancheztemprano
  */
-public class Futbolista extends Plantilla{
+public class Futbolista extends Plantilla {
+
     private int dorsal;
     private String demarcacion;
 
@@ -34,13 +35,12 @@ public class Futbolista extends Plantilla{
     public void setDemarcacion(String demarcacion) {
         this.demarcacion = demarcacion;
     }
-    
-    public void jugarPartido(){
-        
+
+    public void jugarPartido() {
+
     }
-    
-    public void entrenar(){
+
+    public void entrenar() {
     }
-    
-    
+
 }

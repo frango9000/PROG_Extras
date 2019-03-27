@@ -9,7 +9,8 @@ package PROG_EJ_09;
  *
  * @author fsancheztemprano
  */
-public class Entrenador extends Plantilla{
+public class Entrenador extends Plantilla {
+
     private String idFederacion;
 
     public Entrenador(int id, String nombre, String apellidos, int edad, String idFederacion) {
@@ -24,12 +25,12 @@ public class Entrenador extends Plantilla{
     public void setIdFederacion(String idFederacion) {
         this.idFederacion = idFederacion;
     }
-    
-    public void dirigirPartido(){
-        
+
+    public void dirigirPartido() {
+
     }
-    
-    public void dirigirEntrenamiento(){
-        
+
+    public void dirigirEntrenamiento() {
+
     }
 }

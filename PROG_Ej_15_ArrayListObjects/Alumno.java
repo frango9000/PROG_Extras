@@ -5,6 +5,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class Alumno implements Comparable {
+
     String nombre;
     String dni;
     int nota;
@@ -17,10 +18,12 @@ public class Alumno implements Comparable {
         this.dni = dni;
         this.nota = nota;
     }
-    public static Alumno crearAlumno(){
+
+    public static Alumno crearAlumno() {
         return new Alumno(pediDatos("Nombre"), pediDatos("DNI"), Integer.parseInt(pediDatos("Nota")));
     }
-    public static String pediDatos(String msg){
+
+    public static String pediDatos(String msg) {
         Scanner scan = new Scanner(System.in);
         System.out.printf("Introduce %s", msg);
         return scan.next();
@@ -88,7 +91,7 @@ public class Alumno implements Comparable {
         } else if (this.nombre.compareTo(alumno.nombre) < 0) {
             return -1;
         } else {
-         return 0;   
+            return 0;
         }
     }
 

@@ -10,7 +10,7 @@ package PROG_Extras_03_Garaxe;
  * @author fsancheztemprano
  */
 public class PROG_Extras_3_Garaxe {
-    
+
     public static void main(String[] args) {
         Garaxe g1 = new Garaxe(3, 0);
         Coche c1 = new Coche("AAA0000", "Opel");
@@ -21,6 +21,6 @@ public class PROG_Extras_3_Garaxe {
         g1.aparcar(c2);
         g1.aparcar(c3);
         g1.aparcar(c4);
-        
+
     }
 }

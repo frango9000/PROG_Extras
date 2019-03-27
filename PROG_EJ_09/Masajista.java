@@ -9,7 +9,8 @@ package PROG_EJ_09;
  *
  * @author fsancheztemprano
  */
-public class Masajista extends Plantilla{
+public class Masajista extends Plantilla {
+
     private String titulacion;
     private int aniosExperiencia;
 
@@ -34,9 +35,9 @@ public class Masajista extends Plantilla{
     public void setAniosExperiencia(int aniosExperiencia) {
         this.aniosExperiencia = aniosExperiencia;
     }
-    
-    public void darMasaje(){
-        
+
+    public void darMasaje() {
+
     }
 
 }

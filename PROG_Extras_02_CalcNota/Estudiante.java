@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author fsancheztemprano
  */
 public class Estudiante {
-    
+
     private float notaTeorico1;
     private float notaTeorico2;
     private float notaPractico;
@@ -52,62 +52,69 @@ public class Estudiante {
         this.notaPractico = notaPractico;
     }
 
-    
-    public float calcMediaTeorica(){
-        return (notaTeorico1 + notaTeorico2)/2;
+    public float calcMediaTeorica() {
+        return (notaTeorico1 + notaTeorico2) / 2;
     }
-    public float calcPtosTeorica(){
+
+    public float calcPtosTeorica() {
         return calcMediaTeorica() * 0.4f;
     }
-    public float calcPtosPractica(){
-        return notaPractico* 0.4f;
+
+    public float calcPtosPractica() {
+        return notaPractico * 0.4f;
     }
-    public float ratioBoletines(){
-        return (boletines *100)/boletinesTotales;
+
+    public float ratioBoletines() {
+        return (boletines * 100) / boletinesTotales;
     }
-    public float calcPtosBoletines(){
-        if(ratioBoletines()>90f){
+
+    public float calcPtosBoletines() {
+        if (ratioBoletines() > 90f) {
             return 2f;
-        }else if(ratioBoletines()>70f){
+        } else if (ratioBoletines() > 70f) {
             return 1f;
-        }else return 0f;
+        } else {
+            return 0f;
+        }
     }
-    
-    public float calcNotaFinal(){
-        float notaFinal=calcPtosTeorica() + calcPtosPractica() + calcPtosBoletines();
+
+    public float calcNotaFinal() {
+        float notaFinal = calcPtosTeorica() + calcPtosPractica() + calcPtosBoletines();
         System.out.println("Media estudiante: " + notaFinal);
         return Math.round(notaFinal);
     }
-    
-    public void pedirDatos(){
-        
+
+    public void pedirDatos() {
+
         notaTeorico1 = pedirNota("Teorica 1");
         notaTeorico2 = pedirNota("Teorica 2");
         notaPractico = pedirNota("Practica");
-        
-        
+
         boletines = pedirBoletines("Completados");
         boletinesTotales = pedirBoletines("Totales");
-                
-        
+
     }
-    public float validarNota(float fl){
-        if(fl <0 || fl>10)
+
+    public float validarNota(float fl) {
+        if (fl < 0 || fl > 10) {
             return 0;
-        else
+        } else {
             return fl;
+        }
     }
-    public float pedirNota(String str){
-        float nota =0f;
-        String msg ="";
-        while ( validarNota(nota)<1){
-        Scanner scan = new Scanner(System.in);
-        System.out.println(msg+"Introduce Nota "+str+": ");
-        nota = scan.nextFloat();
-        msg="No valida intentalo de nuevo\n";
+
+    public float pedirNota(String str) {
+        float nota = 0f;
+        String msg = "";
+        while (validarNota(nota) < 1) {
+            Scanner scan = new Scanner(System.in);
+            System.out.println(msg + "Introduce Nota " + str + ": ");
+            nota = scan.nextFloat();
+            msg = "No valida intentalo de nuevo\n";
         }
         return nota;
     }
+
     public int pedirBoletines(String str) {
         int bol = -1;
         while (bol < 0) {
@@ -118,7 +125,8 @@ public class Estudiante {
         }
         return bol;
     }
-        public static float calcNotaMediaGrupo(float f, int i){
+
+    public static float calcNotaMediaGrupo(float f, int i) {
         return f / i;
     }
 }

@@ -1,6 +1,7 @@
 package PROG_EJ_10_Excepciones;
 
 public class NoNumExeption extends Exception {
+
     public NoNumExeption() {
         super();
     }

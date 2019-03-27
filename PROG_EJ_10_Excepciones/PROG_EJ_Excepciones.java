@@ -7,17 +7,17 @@ public class PROG_EJ_Excepciones {
     public static void main(String[] args) {
         Operaciones op = new Operaciones();
 
-        try{
+        try {
             int num = Integer.parseInt(JOptionPane.showInputDialog(null, "Introduce numerador: "));
             int denom = Integer.parseInt(JOptionPane.showInputDialog(null, "Introduce denominador: "));
-            op.divisMyEx(num,denom);
-        }catch(DividirExeption e){
+            op.divisMyEx(num, denom);
+        } catch (DividirExeption e) {
             System.out.println("Msg: " + e.getMessage());
-        }catch(IntervaloExeption e){
+        } catch (IntervaloExeption e) {
             System.out.println("Msg: " + e.getMessage());
-        }catch(NoNumExeption e){
+        } catch (NoNumExeption e) {
             System.out.println("Msg: " + e.getMessage());
-        }catch(NumberFormatException e){
+        } catch (NumberFormatException e) {
             System.out.println("Msg: " + e.getMessage());
         }
 //
@@ -36,9 +36,6 @@ public class PROG_EJ_Excepciones {
 //            }
 //        }while(!valid);
 //
-
-
-
 
     }
 }

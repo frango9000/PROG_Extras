@@ -1,4 +1,5 @@
 package PROG_EJ_10_Excepciones;
+
 public class DividirExeption extends Exception {
 
     public DividirExeption() {
@@ -20,6 +21,5 @@ public class DividirExeption extends Exception {
     public DividirExeption(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
-
 
 }

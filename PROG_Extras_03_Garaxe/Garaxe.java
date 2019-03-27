@@ -10,6 +10,7 @@ package PROG_Extras_03_Garaxe;
  * @author fsancheztemprano
  */
 public class Garaxe {
+
     private int plazasDisponibles;
     private int plazasOcupadas;
 
@@ -17,8 +18,6 @@ public class Garaxe {
         this.plazasDisponibles = plazasDisponibles;
         this.plazasOcupadas = plazasOcupadas;
     }
-
- 
 
     public int getPlazasDisponibles() {
         return plazasDisponibles;
@@ -35,19 +34,17 @@ public class Garaxe {
     public void setPlazasOcupadas(int plazasOcupadas) {
         this.plazasOcupadas = plazasOcupadas;
     }
-    
-    public boolean aparcar(Coche coche){
-        if(plazasOcupadas < plazasDisponibles){
+
+    public boolean aparcar(Coche coche) {
+        if (plazasOcupadas < plazasDisponibles) {
             plazasOcupadas++;
             System.out.println("Coche: " + coche.getMarca() + " con matricula: " + coche.getMatricula() + " Aparcado!");
             return true;
-        }else{
+        } else {
             System.out.println("No hay plazas disonibles.");
             return false;
         }
-        
-        
+
     }
 
 }
-

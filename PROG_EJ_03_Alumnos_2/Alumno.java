@@ -17,18 +17,18 @@ public class Alumno {
     public Alumno(String nome, float nota) {
         this.nome = nome;
         this.nota = nota;
-        numReferencia = ++referencia;   
+        numReferencia = ++referencia;
     }
-    
+
     public Alumno(String nome, float nota, String cal, String pob, int tlf) {
         this.nome = nome;
         this.nota = nota;
         numReferencia = ++referencia;
-  
+
         direccion.setCalle(cal);
         direccion.setPoblacion(pob);
         direccion.setTelefono(tlf);
-  
+
     }
 
     public void setNumreferencia(int refe) {

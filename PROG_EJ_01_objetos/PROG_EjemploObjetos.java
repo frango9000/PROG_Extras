@@ -16,23 +16,21 @@ public class PROG_EjemploObjetos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        Rectangulo objRectangulo1 = new Rectangulo(3f,5f);
+
+        Rectangulo objRectangulo1 = new Rectangulo(3f, 5f);
         float respuesta = objRectangulo1.area();
         System.out.println("Rectangulo area: " + respuesta);
-        
-        Triangulo objTriangulo2 = new Triangulo(4f,2f);
+
+        Triangulo objTriangulo2 = new Triangulo(4f, 2f);
         float respuesta2 = objTriangulo2.area();
         System.out.println("Triangulo area: " + respuesta2);
-        
+
         float areasSumadas = objTriangulo2.area() + objRectangulo1.area();
-        
+
         System.out.println("Areas Sumadas: " + areasSumadas);
-        
+
         //Rectangulo.perimetro();
-        
         //?????????????
-        
     }
-    
+
 }

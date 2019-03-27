@@ -36,8 +36,8 @@ public class Secretaria extends Empleado {
 
     @Override
     public float calcSueldo() {
-        
-        return super.calcSueldo()-10f;
+
+        return super.calcSueldo() - 10f;
     }
 
 }

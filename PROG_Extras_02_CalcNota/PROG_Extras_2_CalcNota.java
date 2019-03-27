@@ -12,27 +12,24 @@ import java.util.Scanner;
  * @author fsancheztemprano
  */
 public class PROG_Extras_2_CalcNota {
+
     public static void main(String[] args) {
-        float acumuladorNotas=0f;
+        float acumuladorNotas = 0f;
         Scanner scan = new Scanner(System.in);
-        
+
         System.out.println("Introduce cuantos estudiantes:");
         int cantidadAlumnos = scan.nextInt();
-        
-        for(int i=1;i <= cantidadAlumnos;i++){
+
+        for (int i = 1; i <= cantidadAlumnos; i++) {
             System.out.println("Estudiante numero: " + i);
             Estudiante estu = new Estudiante();
             estu.pedirDatos();
             acumuladorNotas += estu.calcNotaFinal();
-    
+
         }
         float notaMediaGrupo = Estudiante.calcNotaMediaGrupo(acumuladorNotas, cantidadAlumnos);
-        System.out.println("Nota Media Grupo: "+notaMediaGrupo);
-        
-    
+        System.out.println("Nota Media Grupo: " + notaMediaGrupo);
 
+    }
 
-}
-
-    
 }

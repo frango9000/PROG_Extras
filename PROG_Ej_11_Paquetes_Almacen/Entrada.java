@@ -10,8 +10,9 @@ package PROG_Ej_11_Paquetes_Almacen;
  * @author fsancheztemprano
  */
 public class Entrada {
-    public void metodoPersona(){
+
+    public void metodoPersona() {
         System.out.println("Entrada Almacen");
     }
-    
+
 }

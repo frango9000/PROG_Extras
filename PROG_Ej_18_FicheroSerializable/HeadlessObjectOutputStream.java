@@ -15,9 +15,7 @@ public class HeadlessObjectOutputStream extends ObjectOutputStream {
 
     @Override
     protected void writeStreamHeader() throws IOException {
-        
+
     }
-    
-    
 
 }

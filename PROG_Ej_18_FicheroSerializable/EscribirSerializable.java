@@ -9,30 +9,31 @@ import java.io.ObjectOutputStream;
  * @author fsancheztemprano
  */
 public class EscribirSerializable {
+
     ObjectOutputStream file;
     FileOutputStream f;
-    
-    public void escribirObjeto(String filename){
-        try{
+
+    public void escribirObjeto(String filename) {
+        try {
             f = new FileOutputStream(filename + ".dat");
             file = new ObjectOutputStream(f);
-            
+
             for (int i = 0; i < 3; i++) {
-                Alumno al = new Alumno("n" + i, i+1);
+                Alumno al = new Alumno("n" + i, i + 1);
                 file.writeObject(al);
             }
-            
-        }catch (FileNotFoundException ex) {
+
+        } catch (FileNotFoundException ex) {
             System.out.println("FileNotFoundException");
-        }catch (IOException ex) {
+        } catch (IOException ex) {
             System.out.println("IOException");
-            
-        }finally{
-            try{
+
+        } finally {
+            try {
                 file.close();
                 f.close();
-            }catch (IOException ex) {
-                System.out.println("IOException");                
+            } catch (IOException ex) {
+                System.out.println("IOException");
             }
         }
     }

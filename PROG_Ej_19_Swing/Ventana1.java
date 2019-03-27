@@ -13,9 +13,9 @@ public class Ventana1 {
     JFrame marco;
     JDialog ventanaSecundaria;
     JPanel panel;
-       
+
     public void crearVentana() {
-        
+
         //Creacion de la ventana
         marco = new JFrame("titulo de la ventana");
         //Dar visibilidad
@@ -32,7 +32,7 @@ public class Ventana1 {
         ventanaSecundaria = new JDialog(marco, "titulo ventana secundaria");
         ventanaSecundaria.setVisible(true);
         ventanaSecundaria.setBounds(500, 400, 400, 200);
-        
+
         //crear un panel
         panel = new JPanel();
         panel.setBackground(Color.yellow);

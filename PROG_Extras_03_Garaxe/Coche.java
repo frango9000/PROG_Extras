@@ -10,6 +10,7 @@ package PROG_Extras_03_Garaxe;
  * @author fsancheztemprano
  */
 public class Coche {
+
     private String matricula;
     private String marca;
 
@@ -33,6 +34,5 @@ public class Coche {
     public void setMarca(String marca) {
         this.marca = marca;
     }
-    
-    
+
 }

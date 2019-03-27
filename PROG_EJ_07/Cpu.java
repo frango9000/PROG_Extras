@@ -34,6 +34,7 @@ public class Cpu {
     public void setRam(int ram) {
         this.ram = ram;
     }
+
     public void visualizarAtributosCpu() {
         System.out.println("CPU:\nNucleos: " + getNucleos() + "\nRam: " + getRam());
     }

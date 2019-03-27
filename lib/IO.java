@@ -1,8 +1,8 @@
 package lib;
+
 /**
  * @author fsancheztemprano
  */
-
 import java.util.Scanner;
 
 public abstract class IO {

@@ -24,6 +24,7 @@ public class Teclado {
     public void setNumTeclas(int numTeclas) {
         this.numTeclas = numTeclas;
     }
+
     public void visualizarAtributosTeclado() {
         System.out.println("Teclado:\nNumero de Teclas: " + getNumTeclas());
     }

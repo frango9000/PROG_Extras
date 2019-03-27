@@ -12,21 +12,25 @@ import java.util.Scanner;
  * @author fsancheztemprano
  */
 public class Metodos {
+
     private int nota;
-    public void bucleWhile(){
-        nota = pedirNota(); 
-        while(nota >= 5){
+
+    public void bucleWhile() {
+        nota = pedirNota();
+        while (nota >= 5) {
             System.out.println("Aprobado");
             nota = pedirNota();
         }
     }
-    public void bucleDoWhile(){
-        do{
-            nota = pedirNota(); 
+
+    public void bucleDoWhile() {
+        do {
+            nota = pedirNota();
             System.out.println("Aprobado");
-        }while(pedirNota()>=5);
-        
+        } while (pedirNota() >= 5);
+
     }
+
     public void bucleFor() {
         for (int i = 0; i < 5; i++) {
             nota = pedirNota();
@@ -41,9 +45,9 @@ public class Metodos {
         String tag = "";
         do {
             Scanner scan = new Scanner(System.in);
-            System.out.println(tag+"Introduce la nota: ");
+            System.out.println(tag + "Introduce la nota: ");
             intro = scan.nextInt();
-            tag = "Nota no valida (1,10): "+intro+"\n";
+            tag = "Nota no valida (1,10): " + intro + "\n";
         } while (intro < 1 || intro > 10);
         return intro;
     }

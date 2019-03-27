@@ -5,7 +5,6 @@
  */
 package PROG_EJ_05_SwitchCase;
 
-
 /**
  *
  * @author fsancheztemprano
@@ -13,9 +12,9 @@ package PROG_EJ_05_SwitchCase;
 public class PROG_EJ_5_SwitchCase {
 
     public static void main(String[] args) {
-        
+
         Menu.validarDia(Menu.requestNumber());
-            
+
     }
 
 }

@@ -6,7 +6,8 @@ import java.util.Scanner;
 /**
  * @author fsancheztemprano
  */
-public class Alumno implements Serializable{
+public class Alumno implements Serializable {
+
     private String nombre;
     private int nota;
 
@@ -19,8 +20,8 @@ public class Alumno implements Serializable{
     public String toString() {
         return "Alumno{" + "nombre=" + nombre + ", nota=" + nota + '}';
     }
-    
-    public static Alumno nuevoAlumno(){
+
+    public static Alumno nuevoAlumno() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Introduce nombre ");
         String nombre = scan.nextLine();
@@ -28,6 +29,5 @@ public class Alumno implements Serializable{
         int nota = scan.nextInt();
         return new Alumno(nombre, nota);
     }
-    
-    
+
 }

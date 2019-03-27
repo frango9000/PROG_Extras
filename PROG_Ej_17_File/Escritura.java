@@ -11,9 +11,10 @@ import java.util.ArrayList;
  * @author fsancheztemprano
  */
 public class Escritura {
+
     File file = null;
     PrintWriter pw = null;
-    
+
     public File escribirNumeros(String nomeFich) {
         file = new File(nomeFich + ".txt");
         //cuando abrimos el fichero para escribir puede no existir entonces lo crea
@@ -48,16 +49,16 @@ public class Escritura {
         }
     }
 
-    public void agregar (String nomeFich){
+    public void agregar(String nomeFich) {
         try {
             //filewriter añade a un fichero: continua escribiendo donde el fichero está vacio
-            pw = new PrintWriter(new FileWriter(nomeFich+".txt",true));
+            pw = new PrintWriter(new FileWriter(nomeFich + ".txt", true));
             Alumno a = Alumno.nuevoAlumno();
             pw.println(a);
         } catch (IOException ex) {
-           System.out.println(ex.getMessage());
-        }finally {
+            System.out.println(ex.getMessage());
+        } finally {
             pw.close();
-        }    
-    }    
+        }
+    }
 }

@@ -10,8 +10,9 @@ package PROG_EJ_09;
  * @author fsancheztemprano
  */
 public class main {
+
     public static void main(String[] args) {
-        
+
     }
-    
+
 }

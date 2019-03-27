@@ -6,16 +6,19 @@ import java.util.HashMap;
  * @author fsancheztemprano
  */
 public class Almacen {
+
     public HashMap<Integer, Integer> almacen = new HashMap<>();
-    
-    public void agregar(int ref, int unidades){
-        almacen.put(ref, unidades);        
+
+    public void agregar(int ref, int unidades) {
+        almacen.put(ref, unidades);
     }
-    public void restock(int ref, int nuevasUnidades){
+
+    public void restock(int ref, int nuevasUnidades) {
         int actual = almacen.get(ref);
-        almacen.replace(ref, actual+nuevasUnidades);        
+        almacen.replace(ref, actual + nuevasUnidades);
     }
-    public int getUnidades(int ref){
+
+    public int getUnidades(int ref) {
         return almacen.get(ref);
     }
 }

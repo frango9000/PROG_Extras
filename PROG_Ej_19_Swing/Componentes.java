@@ -1,4 +1,5 @@
 package PROG_Ej_19_Swing;
+
 /**
  * @author fsancheztemprano
  */
@@ -11,15 +12,15 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class Componentes {
-    
+
     JFrame marco;
     JPanel panel;
     JButton boton1, boton2;
     JLabel etiqueta;
     JTextField lineaTxt;
     JComboBox<String> box;
-    
-    public void crearVentana(){
+
+    public void crearVentana() {
         //INSTANCIACION
         marco = new JFrame("Marco");
         panel = new JPanel();
@@ -28,9 +29,7 @@ public class Componentes {
         etiqueta = new JLabel();
         lineaTxt = new JTextField(20);
         box = new JComboBox<>();
-        
-        
-        
+
         //CARACTERISTICAS
         marco.setSize(800, 400);
         panel.setSize(800, 400);
@@ -42,7 +41,7 @@ public class Componentes {
         lineaTxt.setBounds(0, 0, 0, 0);
         box.setBounds(0, 0, 0, 0);
         //box.set
-        
+
         //AÑADIR COMPONENTES
         //al panel
         panel.add(etiqueta);
@@ -52,13 +51,13 @@ public class Componentes {
         panel.add(box);
         // al marco
         marco.add(panel);
-        
+
         //HACEMOS VISIBLE EL MARCO
         marco.setVisible(true);
-        
+
         //CIERRE EN X
         marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+
         //DESACTIVAMOS Layout PARA PERSONALIZAR
         panel.setLayout(null);
     }

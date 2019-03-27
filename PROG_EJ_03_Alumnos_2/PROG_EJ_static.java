@@ -9,7 +9,6 @@ public class PROG_EJ_static {
         alu2.amosar();
         Alumno alu3 = new Alumno("P", 1f, "calle", "vigo", 1243124);
         alu3.amosar();
-        
 
     }
 

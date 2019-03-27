@@ -6,6 +6,7 @@ import java.util.Scanner;
  * @author fsancheztemprano
  */
 public class Alumno {
+
     private String nombre;
     private int nota;
 
@@ -26,9 +27,8 @@ public class Alumno {
     public int getNota() {
         return nota;
     }
-    
-        
-    public static Alumno nuevoAlumno(){
+
+    public static Alumno nuevoAlumno() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Introduce nombre ");
         String nombre = scan.nextLine();

@@ -10,8 +10,9 @@ package PROG_Ej_11_Paquetes_Taller;
  * @author fsancheztemprano
  */
 public class Reparacion {
-    public void reparacion(){
+
+    public void reparacion() {
         System.out.println("Taller Repara");
     }
-    
+
 }

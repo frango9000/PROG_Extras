@@ -10,7 +10,8 @@ package PROG_Ej_11_Paquetes_Almacen;
  * @author fsancheztemprano
  */
 public class Salida {
-    public void salida(){
+
+    public void salida() {
         System.out.println("Salida Almacen");
     }
 }

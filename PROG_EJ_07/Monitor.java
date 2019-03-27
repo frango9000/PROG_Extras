@@ -34,6 +34,7 @@ public class Monitor {
     public void setPulgadas(float pulgadas) {
         this.pulgadas = pulgadas;
     }
+
     public void visualizarAtributosMonitor() {
         System.out.println("Monitor:\nMarca: " + getMarca() + "\nPulgadas: " + getPulgadas());
     }

@@ -10,6 +10,7 @@ import PROG_Ej_11_Paquetes_Taller.*;
 import PROG_Ej_11_Paquetes_Almacen.*;
 
 import PROG_Ej_11_Paquetes_Personal.*;
+
 /**
  *
  * @author fsancheztemprano
@@ -22,11 +23,9 @@ public class Aplication {
         Entrada in = new Entrada();
         NumeroVitrasa nv = new NumeroVitrasa();
         rep.reparacion();
-        
+
         nv.toString();
-            
+
     }
 
-    
-    
 }

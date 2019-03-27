@@ -42,7 +42,8 @@ public class Rato {
             return "alambrico";
         }
     }
-        public void visualizarAtributosRato() {
+
+    public void visualizarAtributosRato() {
         System.out.println("Rato:\nTipo: " + getTypeString() + "\nModelo: " + getModelo());
     }
 }

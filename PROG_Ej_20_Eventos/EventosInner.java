@@ -19,39 +19,35 @@ public class EventosInner extends JFrame {
     public EventosInner() {
         super("*** EVENTOS ***");
     }
-    
-    
-    public void crearVentana(){
+
+    public void crearVentana() {
         panel = new JPanel();
         boton = new JButton("vermello");
         setSize(400, 200);
         panel.add(boton);
         add(panel);
-        
+
         setVisible(true);
         setDefaultCloseOperation(3);
         //Selecionando eventos 
         boton.addActionListener(new EjecutarEvento());
-    }    
+    }
 
-    public class EjecutarEvento implements ActionListener{
+    public class EjecutarEvento implements ActionListener {
 
         boolean red = false;
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        if (!red){
-            panel.setBackground(Color.RED);
-            red = true;
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (!red) {
+                panel.setBackground(Color.RED);
+                red = true;
+            } else {
+                panel.setBackground(Color.WHITE);
+                red = false;
+            }
         }
-        else {
-            panel.setBackground(Color.WHITE);
-            red = false;
-        }
+
     }
-        
-    }
-        
-        
-    
+
 }

@@ -65,7 +65,7 @@ public class Empleado {
         return "Empleado{" + "nombre=" + nombre + ", inicio=" + inicio.getTime() + ", nacimiento=" + nacimiento.getTime() + ", titulacion=" + titulacion + '}';
     }
 
-    public float calcSueldo(){
+    public float calcSueldo() {
         return 20f;
     }
 }

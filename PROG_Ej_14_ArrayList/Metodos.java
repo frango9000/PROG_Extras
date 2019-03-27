@@ -7,34 +7,40 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Metodos {
-    
-    public static void agregar(ArrayList<Integer> lista){
+
+    public static void agregar(ArrayList<Integer> lista) {
         lista.add(IO.scanInt("introducir numero"));
     }
-    public static void mostrarFor(ArrayList<Integer> lista){
+
+    public static void mostrarFor(ArrayList<Integer> lista) {
         for (int i = 0; i < lista.size(); i++) {
-            System.out.println(lista.get(i));            
+            System.out.println(lista.get(i));
         }
     }
-    public static void mostrarForEach(ArrayList<Integer> lista){
+
+    public static void mostrarForEach(ArrayList<Integer> lista) {
         for (Integer integer : lista) {
-            System.out.println(integer);            
+            System.out.println(integer);
         }
     }
-    public static void mostrarIterador(ArrayList<Integer> lista){
+
+    public static void mostrarIterador(ArrayList<Integer> lista) {
         Iterator it = lista.iterator();
-        while(it.hasNext()){
+        while (it.hasNext()) {
             System.out.println(it.next());
         }
     }
-    public static int eliminarIndex(ArrayList<Integer> lista, int posicion){
-        return lista.remove(posicion);   
+
+    public static int eliminarIndex(ArrayList<Integer> lista, int posicion) {
+        return lista.remove(posicion);
     }
-    public static boolean eliminarElemento(ArrayList<Integer> lista, int elemento){
+
+    public static boolean eliminarElemento(ArrayList<Integer> lista, int elemento) {
         Integer num = elemento;
-        return lista.remove(num);        
+        return lista.remove(num);
     }
-        public void actualizarValor(ArrayList<Integer> listNumeros, Integer posicion,Integer elementoNuevo){
-        listNumeros.set(posicion-1,elementoNuevo);
+
+    public void actualizarValor(ArrayList<Integer> listNumeros, Integer posicion, Integer elementoNuevo) {
+        listNumeros.set(posicion - 1, elementoNuevo);
     }
 }

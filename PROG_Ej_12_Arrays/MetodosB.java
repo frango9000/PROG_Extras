@@ -24,7 +24,6 @@ public class MetodosB {
 
     int[] numeros = {10, 20, 30, 40, 50, 60, 70, 80, 90};
 
-
     public void crearArray() {
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = darValor("Indice " + i);
@@ -35,7 +34,7 @@ public class MetodosB {
         return Arrays.toString(numeros);
     }
 
-    public void mostrar(){
+    public void mostrar() {
         ArraysLib.mostrar(numeros);
     }
 
@@ -45,7 +44,7 @@ public class MetodosB {
         }
     }
 
-    public int buscarIndice(int num){
+    public int buscarIndice(int num) {
         return ArraysLib.buscarIndice(numeros, num);
     }
 
@@ -54,26 +53,21 @@ public class MetodosB {
 
     }
 
-
     public int contarRepetidos(int num) {
         return ArraysLib.contarRepetidos(numeros, num);
     }
-
 
     public void arrayDeRepetidos(int num) {
         numeros = ArraysLib.arrayDeRepetidos(numeros, num);
     }
 
-
     public void arrayOrdenado() {
         numeros = ArraysLib.arrayOrdenado(numeros);
     }
 
-
     public void eliminarNota(int indice) {
         numeros = ArraysLib.eliminarIndice(numeros, indice);
     }
-
 
     public void agregarIndice(int indice, int elemento) {
         numeros = ArraysLib.agregarIndice(numeros, indice, elemento);
