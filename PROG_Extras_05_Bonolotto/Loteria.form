@@ -132,6 +132,9 @@
           </Layout>
           <SubComponents>
             <Component class="javax.swing.JTextField" name="jTextField1">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel1">
               <Properties>
@@ -139,8 +142,14 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField2">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField3">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
@@ -189,7 +198,7 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jButton10" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jButton10" alignment="0" pref="73" max="32767" attributes="0"/>
                       <Component id="jButton9" alignment="0" max="32767" attributes="0"/>
                       <Component id="jButton8" alignment="0" max="32767" attributes="0"/>
                       <Component id="jButton7" alignment="0" max="32767" attributes="0"/>
@@ -236,6 +245,9 @@
                       <Dimension value="null"/>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JButton" name="jButton2">
                   <Properties>
@@ -316,7 +328,7 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jButton60" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jButton60" alignment="0" pref="73" max="32767" attributes="0"/>
                       <Component id="jButton59" alignment="0" max="32767" attributes="0"/>
                       <Component id="jButton58" alignment="0" max="32767" attributes="0"/>
                       <Component id="jButton57" alignment="0" max="32767" attributes="0"/>
@@ -443,7 +455,7 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jButton70" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jButton70" alignment="0" pref="73" max="32767" attributes="0"/>
                       <Component id="jButton69" alignment="0" max="32767" attributes="0"/>
                       <Component id="jButton68" alignment="0" max="32767" attributes="0"/>
                       <Component id="jButton67" alignment="0" max="32767" attributes="0"/>
@@ -570,7 +582,7 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jButton80" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jButton80" alignment="0" pref="73" max="32767" attributes="0"/>
                       <Component id="jButton79" alignment="0" max="32767" attributes="0"/>
                       <Component id="jButton78" alignment="0" max="32767" attributes="0"/>
                       <Component id="jButton77" alignment="0" max="32767" attributes="0"/>
@@ -697,7 +709,7 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jButton90" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jButton90" alignment="0" pref="77" max="32767" attributes="0"/>
                       <Component id="jButton89" alignment="0" max="32767" attributes="0"/>
                       <Component id="jButton88" alignment="0" max="32767" attributes="0"/>
                       <Component id="jButton87" alignment="0" max="32767" attributes="0"/>
@@ -841,15 +853,34 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel4" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="50" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel4" pref="38" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
           </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel4">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Dialog" size="24" style="1"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="BonoLotto"/>
+              </Properties>
+            </Component>
+          </SubComponents>
         </Container>
       </SubComponents>
     </Container>
