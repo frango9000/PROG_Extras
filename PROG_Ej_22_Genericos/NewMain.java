@@ -10,7 +10,9 @@ public class NewMain {
         
         e5();
     }
-    
+    /**
+     * Sin genericos hace falta castear al tipo apropiado
+     */
     static void e1(){
         ClaseObject obx1 = new ClaseObject();
         obx1.setVariable("aaa");
