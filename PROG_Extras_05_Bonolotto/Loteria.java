@@ -665,7 +665,7 @@ public class Loteria extends javax.swing.JFrame implements ActionListener{
         else{
             numeroLoteria.clear();
             Random r = new Random();
-            for (int i = 0; i < 6; i++) {
+            while(numeroLoteria.size() != 6){
                 numeroLoteria.add(r.nextInt(48)+1);                
             }
             jTextFieldBonoLotto.setText(numeroLoteria.toString());
