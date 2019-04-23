@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class NewMain {
     public static void main(String[] args) {
         
-        e5();
+        e7();
     }
     /**
      * Sin genericos hace falta castear al tipo apropiado
@@ -36,10 +36,32 @@ public class NewMain {
         System.out.println(gen1.getValor().toString());
     }
     static void e5(){
+        ClaseGenerica<Integer> gen1 = new ClaseGenerica<>();
+        ArrayList<Integer> listap = new ArrayList<>();
+        listap.add(1000);
+        listap.add(1009);
+        gen1.mostrar(listap);
+    }
+    static void e6(){
         ClaseGenerica<Persona> gen1 = new ClaseGenerica<>();
         ArrayList<Persona> listap = new ArrayList<>();
         listap.add(new Persona("Ana", 1000));
         listap.add(new Persona("Juan",1009));
         gen1.mostrar(listap);
     }
+    static void e7(){
+        ClaseGenerica<Persona> gen1 = new ClaseGenerica<>();
+        ArrayList<Persona> listap = new ArrayList<>();
+        listap.add(new Persona("Ana", 1000));
+        listap.add(new Persona("Juan",1009));
+        gen1.mostrar(listap);
+    }
+    static void e8(){
+        ClaseGenerica<Persona> gen1 = new ClaseGenerica<>();
+        ArrayList<Profesor> listap = new ArrayList<>();
+        listap.add(new Profesor("Ana", 1000, "mate"));
+        listap.add(new Profesor("Juan",1009, "prog"));
+        gen1.ver(listap);
+    }
+    
 }

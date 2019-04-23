@@ -24,9 +24,14 @@ public class ClaseGenerica <T> {
         this.valor = valor;
     }
     
-    public void mostrar(ArrayList<T> lista){
+    public <T> void mostrar(ArrayList<T> lista){
         for (int i = 0; i < lista.size(); i++) {
             System.out.println(lista.get(i));
+        }
+    }
+    public void ver(ArrayList<? extends Persona> lista){
+        for (Persona persona : lista) {
+            System.out.println(persona);
         }
     }
     
