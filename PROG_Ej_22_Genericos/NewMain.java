@@ -1,11 +1,14 @@
 package PROG_Ej_22_Genericos;
+
+import java.util.ArrayList;
+
 /**
  * @author fsancheztemprano
  */
 public class NewMain {
     public static void main(String[] args) {
         
-        e4();
+        e5();
     }
     
     static void e1(){
@@ -29,5 +32,12 @@ public class NewMain {
         ClaseGenerica<Persona> gen1 = new ClaseGenerica<>();
         gen1.setValor(new Persona("ana", 1100));
         System.out.println(gen1.getValor().toString());
+    }
+    static void e5(){
+        ClaseGenerica<Persona> gen1 = new ClaseGenerica<>();
+        ArrayList<Persona> listap = new ArrayList<>();
+        listap.add(new Persona("Ana", 1000));
+        listap.add(new Persona("Juan",1009));
+        gen1.mostrar(listap);
     }
 }

@@ -11,9 +11,9 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(String nome, float soldo) {
-        this.nombre = nome;
-        this.sueldo = soldo;
+    public Persona(String nombre, float sueldo) {
+        this.nombre = nombre;
+        this.sueldo = sueldo;
     }
 
     public String getNombre() {
