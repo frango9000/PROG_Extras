@@ -3,43 +3,38 @@ package PROG_Ej_22_Genericos;
 /**
  * @author fsancheztemprano
  */
-
 public class Persona {
 
-    private String nome;
-    private float soldo;
+    private String nombre;
+    private float sueldo;
 
     public Persona() {
     }
 
     public Persona(String nome, float soldo) {
-        this.nome = nome;
-        this.soldo = soldo;
+        this.nombre = nome;
+        this.sueldo = soldo;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public float getSoldo() {
-        return soldo;
+    public float getSueldo() {
+        return sueldo;
     }
 
-    public void setSoldo(float soldo) {
-        this.soldo = soldo;
+    public void setSueldo(float sueldo) {
+        this.sueldo = sueldo;
     }
 
     @Override
     public String toString() {
-        return "Nome = " + nome + ", Soldo = " + soldo;
-    }
-
-    public float calcularSoldo() {
-        return 1500;
+        return "Nombre = " + nombre + ", Sueldo = " + sueldo;
     }
 
 }
